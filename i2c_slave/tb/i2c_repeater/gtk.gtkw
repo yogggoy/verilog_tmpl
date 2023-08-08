@@ -1,0 +1,55 @@
+[*]
+[*] GTKWave Analyzer v3.3.61 (w)1999-2014 BSI
+[*] Tue Apr 23 18:30:49 2019
+[*]
+[dumpfile] "/home/mergenov/tmp/trash/BZR2_i2c_try/src/tb/i2c_repeater/out.vcd"
+[dumpfile_mtime] "Tue Apr 23 18:27:26 2019"
+[dumpfile_size] 616643
+[savefile] "/home/mergenov/tmp/trash/BZR2_i2c_try/src/tb/i2c_repeater/gtk.gtkw"
+[timestart] 0
+[size] 1108 615
+[pos] 462 -10
+*-26.000000 64000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] i2c_tb.
+[treeopen] i2c_tb.i2c_internal_inst.
+[sst_width] 229
+[signals_width] 190
+[sst_expanded] 1
+[sst_vpaned_height] 148
+@28
+i2c_tb.i2c_internal_inst.reset_n
+i2c_tb.i2c_internal_inst.clk_25
+i2c_tb.i2c_internal_inst.back_scl
+i2c_tb.i2c_internal_inst.front_scl
+i2c_tb.i2c_internal_inst.back_sda
+i2c_tb.i2c_internal_inst.front_sda
+i2c_tb.i2c_sda
+i2c_tb.i2c_scl
+[color] 3
+i2c_tb.i2c_internal_inst.mst_sda
+[color] 3
+i2c_tb.i2c_internal_inst.mst_scl
+[color] 1
+i2c_tb.i2c_internal_inst.slv_sda
+[color] 1
+i2c_tb.i2c_internal_inst.ext_sda_oe
+[color] 1
+i2c_tb.i2c_internal_inst.i2c_repeater_inst.external_ACK
+@22
+[color] 1
+i2c_tb.i2c_internal_inst.i2c_repeater_inst.sm[3:0]
+@24
+i2c_tb.iter_counter[7:0]
+@28
+[color] 1
+i2c_tb.i2c_internal_inst.i2c_repeater_inst.rw
+i2c_tb.i2c_internal_inst.START
+i2c_tb.i2c_internal_inst.STOP
+@29
+[color] 7
+i2c_tb.i2c_internal_inst.int_sda_oe
+@22
+[color] 7
+i2c_tb.i2c_internal_inst.i2c_slave_inst.sm[3:0]
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,60 @@
+VCD info: dumpfile out.vcd opened for output.
+---
+  1 SCAN WRITE
+OK  : test  1: step 1; sm = 3
+OK  : test  1: step 2; sm = 0
+---
+  2 SCAN WRITE | SLV ACK
+OK  : test  2: step 1; sm = 3
+OK  : test  2: step 2; sm = 4
+---
+  3 WRITE | SLV NACK + 1 byte
+OK  : test  3: step 1; sm = 3
+OK  : test  3: step 2; sm = 0
+---
+  4 WRITE | SLV ACK + 1 byte
+OK  : test  4: step 1; sm = 3
+OK  : test  4: step 2; sm = 4
+OK  : test  4: step 3; sm = 3
+OK  : test  4: step 4; sm = 4
+OK  : test  4: step 5; sm = 0
+---
+  5 WRITE | SLV ACK + 1 byte
+OK  : test  5: step 1; sm = 3
+OK  : test  5: step 2; sm = 4
+OK  : test  5: step 3; sm = 3
+OK  : test  5: step 4; sm = 0
+---
+  6 READ | SLV NACK + 1 byte
+OK  : test  6: step 1; sm = 3
+OK  : test  6: step 2; sm = 0
+---
+  7 READ | SLV ACK + 2 byte
+OK  : test  7: step 1; sm = 3
+OK  : test  7: step 2; sm = 5
+OK  : test  7: step 3; sm = 6
+OK  : test  7: step 4; sm = 5
+OK  : test  7: step 5; sm = 6
+OK  : test  7: step 6; sm = 0
+---
+  8 WRITE + 1 byte | + READ 2 byte
+OK  : test  8: step 1; sm = 3
+OK  : test  8: step 2; sm = 4
+OK  : test  8: step 3; sm = 3
+OK  : test  8: step 4; sm = 1
+OK  : test  8: step 5; sm = 3
+OK  : test  8: step 6; sm = 5
+OK  : test  8: step 7; sm = 6
+OK  : test  8: step 8; sm = 5
+OK  : test  8: step 9; sm = 6
+OK  : test  8: step 10; sm = 0
+---
+  9 READ | SLV ACK
+OK  : test  9: step 1; sm = 3
+OK  : test  9: step 2; sm = 5
+OK  : test  9: step 3; sm = 6
+FAIL: test  9: step 4; sm = 5
+FAIL: test  9: step 5; sm = 5
+
+---
+ 10 SCAN INTERNAL SLV 0x77
